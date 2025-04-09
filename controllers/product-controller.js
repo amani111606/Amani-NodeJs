@@ -109,7 +109,7 @@ const getproductsanalysis = async(req,res)=>{
                     totalRevenue:{$sum: "$price"},
                     averagePrice: {$avg :"$price"},
                     maxPrice: {$max:"$price"},
-                    minPrice: {$min:"$price"} ,
+                    minPrice: {$min:"$price"},
                     //diff: { $subtract: ["$maxPrice", "$minPrice"] }
                    
                 }
